@@ -16,14 +16,24 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-const weapons = [
-  { name: 'stick', power: 5 },
-  { name: 'dagger', power: 30 },
-  { name: 'claw hammer', power: 50 },
-  { name: 'sword', power: 100 }
-];
-const monsters = [
+const weapons = [{
+    name: 'stick',
+    power: 5
+  },
   {
+    name: 'dagger',
+    power: 30
+  },
+  {
+    name: 'claw hammer',
+    power: 50
+  },
+  {
+    name: 'sword',
+    power: 100
+  }
+];
+const monsters = [{
     name: "slime",
     level: 2,
     health: 15
@@ -39,8 +49,7 @@ const monsters = [
     health: 300
   }
 ]
-const locations = [
-  {
+const locations = [{
     name: "town square",
     "button text": ["Go to store", "Go to cave", "Fight dragon"],
     "button functions": [goStore, goCave, fightDragon],
@@ -76,11 +85,11 @@ const locations = [
     "button functions": [restart, restart, restart],
     text: "You die. &#x2620;"
   },
-  { 
-    name: "win", 
-    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"], 
-    "button functions": [restart, restart, restart], 
-    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;" 
+  {
+    name: "win",
+    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+    "button functions": [restart, restart, restart],
+    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
   },
   {
     name: "easter egg",
@@ -189,7 +198,7 @@ function attack() {
   text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
   health -= getMonsterAttackValue(monsters[fighting].level);
   if (isMonsterHit()) {
-    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;    
+    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
   } else {
     text.innerText += " You miss.";
   }
