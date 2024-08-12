@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--inicio Tipografias-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap"
+    rel="stylesheet">
+<!--Fin Tipografias-->
+<title>Buscador de Pokemons</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1 class="title">Buscador de pokemons</h1>
+<div class="container">
+  <p>Ingrese el nombre o el id del pokemon: </p>
+  <input type="text" id="search-input" class="input" required />
+  <button id="search-button" class="btn">Buscar</button>
+  <div class="name">
+    <p id="pokemon-id"></p>
+    <p id="pokemon-name"></p>
+  </div>
+  <div id="img-container" class="img"></div>
+  <div class="measures">
+    <p id="weight"></p>
+    <p id="height"></p>
+  </div>
+  <div id="types" class="types"></div>
+  <table class="stats">
+    <thead>
+      <tr>
+        <th>Stats</th>
+        <th>Base</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Health</td>
+        <td id="hp"></td>
+      </tr>
+      <tr>
+        <td>Attack</td>
+        <td id="attack"></td>
+      </tr>
+      <tr>
+        <td>Defense</td>
+        <td id="defense"></td>
+      </tr>
+      <tr>
+        <td>Special Attack</td>
+        <td id="special-attack"></td>
+      </tr>
+      <tr>
+        <td>Special Defense</td>
+        <td id="special-defense"></td>
+      </tr>
+      <tr>
+        <td>Speed</td>
+        <td id="speed"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

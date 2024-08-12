@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+  font-size: 62.5%;
+  background: linear-gradient(45deg, #201e1e, #554f4f);
+  color: #fff;
+  font-family: Montserrat;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#nav-bar {
+  box-sizing: border-box;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+  width: 100%;
+}
+#nav-bar #logo {
+  height: 40px;
+}
+#nav-bar .nav-link {
+  color: #333;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 18px;
+}
+#nav-bar .nav-link:hover {
+  text-decoration: underline;
+}
+#header-img {
+  padding-top: 5rem;
+  width: 100%;
+}
+h3 {
+  font-size: 3rem;
+  padding-left: 15px;
+  letter-spacing: 0.2rem;
+}
+#info p {
+  word-spacing: 0.6rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  text-align: justify;
+  padding: 0 1.5rem 3rem;
+}
+.video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+#footer p {
+  flex-basis: 100%;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#email {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 250px;
+}
+#submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: #444;
+}
+#submit:active {
+  background-color: #333;
+}
+@media (min-width: 768px) {
+  #footer .links, #footer .form-section {
+    flex-basis: 50%;
+  }
+}

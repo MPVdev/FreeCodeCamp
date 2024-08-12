@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Usuario</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Formulario de Usuario</h1>
+<p id="description">Complete el siguiente formulario para proporcionar su información.</p>
+<form id="survey-form">
+  <fieldset>
+    <legend>Datos Personales</legend>
+    <label for="name" id="name-label">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+    <label for="number" id="number-label">Numero:</label>
+    <input type="number" id="number" name="number" placeholder="Ingrese un numero" min="1" max="100" required>
+    <label for="dropdown">Genero:</label>
+    <select id="dropdown" name="dropdown" required>
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>Datos sobre tu desarrollo</legend>
+    <label class="subtitle">Escoge un Lenguaje de Programación:</label>
+    <label for="Java">
+      <input type="radio" id="Java" name="radioGroup" value="Java" class="inline" required>
+      Java</label>
+    <label for="Python">
+      <input type="radio" id="Python" name="radioGroup" value="Python" class="inline" required>
+      Python</label>
+    <label for="JavaScript">
+      <input type="radio" id="JavaScript" name="radioGroup" value="JavaScript" class="inline" required>
+      JavaScript</label>
+    <label class="subtitle">Selecciona tus herramientas de desarrollo web favoritas</label>
+    <label for="HTML-CSS">
+      <input type="checkbox" id="HTML-CSS" name="checkboxGroup" value="HTML-CSS" class="inline" required>
+      HTML/CSS</label>
+    <label for="React">
+      <input type="checkbox" id="React" name="checkboxGroup" value="React" class="inline" required>
+      React</label>
+    <label for="Node-js">
+      <input type="checkbox" id="Node-js" name="checkboxGroup" value="Node-js" class="inline" required>
+      Node.js</label>
+  </fieldset>
+  <fieldset>
+    <legend>Información Adicional</legend>
+    <label for="Beginnings">Como empezaste en la Programación</label>
+    <textarea id="Beginnings" name="Beginnings" placeholder="Cuentanos..." rows="3" cols="30"></textarea>
+  </fieldset>
+  <button type="submit" id="submit">Enviar</button>
+</form>
+</body>
+</html>
